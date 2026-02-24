@@ -1,13 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>porchlandia</title>
-  </head>
-  <body>
-    <div id="root"></div>
+
+    <title>Porchlandia — Where the Porch Remembers</title>
+
+    <!-- Future favicon goes here -->
+    <!-- <link rel="icon" type="image/png" href="/favicon.png" /> -->
+
+    <!-- SEO + Sharing -->
+    <meta name="description" content="Where stories rest. Where bears become. <br> Where the porch remembers." />
+    <meta property="og:title" content="Porchlandia" />
+    <meta property="og:description" content="A world by Brent Brooks & Senty Sterling Martindale Brooks" />
+    <meta property="og:image" content="/porch-preview.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Vite injects JS and CSS automatically through this module script -->
     <script type="module" src="/src/main.jsx"></script>
+
+    <style>
+      /* Ensure the root fills the viewport cleanly */
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- React mounts the Porchlandia page inside this div -->
+    <div id="root"></div>
   </body>
 </html>
